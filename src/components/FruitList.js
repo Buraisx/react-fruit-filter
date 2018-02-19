@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        
-      </div>
-    );
-  }
-}
+const FruitList = props => (
+      <ul>
+      	{props.fruits.map(fruit => <li>{fruit}</li>)}
+      </ul>
+);
 
-export default App;
+export default FruitList;
